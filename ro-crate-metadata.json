@@ -1,0 +1,82 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "datePublished": "2023-10-30T06:18:00.536806",
+            "hasPart": [
+                {
+                    "@id": "Purge-duplicate-contigs-VGP6.ga"
+                },
+                {
+                    "@id": "README.md"
+                }
+            ],
+            "isBasedOn": "https://github.com/iwc-workflows/Purge-duplicate-contigs-VGP6",
+            "license": "CC-BY-4.0",
+            "mainEntity": {
+                "@id": "Purge-duplicate-contigs-VGP6.ga"
+            },
+            "name": "Purge-duplicate-contigs-VGP6/main"
+        },
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
+            }
+        },
+        {
+            "@id": "Purge-duplicate-contigs-VGP6.ga",
+            "@type": [
+                "File",
+                "SoftwareSourceCode",
+                "ComputationalWorkflow"
+            ],
+            "creator": [
+                {
+                    "@id": "#f74ba845-d216-4f2c-b873-153f958e0395"
+                },
+                {
+                    "@id": "https://vertebrategenomeproject.org"
+                }
+            ],
+            "name": "Purge-duplicate-contigs-VGP6/main",
+            "programmingLanguage": {
+                "@id": "#galaxy"
+            },
+            "url": "https://github.com/iwc-workflows/Purge-duplicate-contigs-VGP6",
+            "version": "0.1"
+        },
+        {
+            "@id": "#galaxy",
+            "@type": "ComputerLanguage",
+            "identifier": {
+                "@id": "https://galaxyproject.org/"
+            },
+            "name": "Galaxy",
+            "url": {
+                "@id": "https://galaxyproject.org/"
+            },
+            "version": "v19_09"
+        },
+        {
+            "@id": "#f74ba845-d216-4f2c-b873-153f958e0395",
+            "@type": "Organization",
+            "name": "Galaxy"
+        },
+        {
+            "@id": "https://vertebrategenomeproject.org",
+            "@type": "Organization",
+            "name": "VGP"
+        },
+        {
+            "@id": "README.md",
+            "@type": "File"
+        }
+    ]
+}
