@@ -14,8 +14,8 @@
     ],
     "format-version": "0.1",
     "license": "CC-BY-4.0",
-    "release":"0.2.0",
-    "name": "Purge duplicate contigs (WF6)",
+    "release": "0.3.0",
+    "name": "Purge-duplicate-contigs-VGP6",
     "steps": {
         "0": {
             "annotation": "",
@@ -33,7 +33,7 @@
             "name": "Input dataset collection",
             "outputs": [],
             "position": {
-                "left": 0.0,
+                "left": 0,
                 "top": 0
             },
             "tool_id": null,
@@ -180,23 +180,23 @@
             "workflow_outputs": []
         },
         "6": {
-            "annotation": "",
+            "annotation": "Provide lineage for BUSCO (e.g., Vertebrata)",
             "content_id": null,
             "errors": null,
             "id": 6,
             "input_connections": {},
             "inputs": [
                 {
-                    "description": "",
-                    "name": "Busco Lineage"
+                    "description": "Provide lineage for BUSCO (e.g., Vertebrata)",
+                    "name": "Lineage"
                 }
             ],
-            "label": "Busco Lineage",
+            "label": "Lineage",
             "name": "Input parameter",
             "outputs": [],
             "position": {
-                "left": 254.36771647135419,
-                "top": 666.2375081380211
+                "left": 216.76248168945312,
+                "top": 631.0250244140625
             },
             "tool_id": null,
             "tool_state": "{\"restrictOnConnections\": true, \"parameter_type\": \"text\", \"optional\": false}",
@@ -806,14 +806,14 @@
             "when": null,
             "workflow_outputs": [
                 {
-                    "label": "Read Coverage and cutoffs calculation on primary assembly : Histogram plot",
-                    "output_name": "hist",
-                    "uuid": "2e045d9d-99e4-457f-9cee-691616ed6590"
-                },
-                {
                     "label": "Cutoffs for primary assembly",
                     "output_name": "calcuts_cutoff",
                     "uuid": "d2c6d9bd-e28f-4ff1-ac7b-f9068e49a582"
+                },
+                {
+                    "label": "Read Coverage and cutoffs calculation on primary assembly : Histogram plot",
+                    "output_name": "hist",
+                    "uuid": "2e045d9d-99e4-457f-9cee-691616ed6590"
                 }
             ]
         },
@@ -1125,16 +1125,7 @@
                     "output_name": "output"
                 }
             },
-            "inputs": [
-                {
-                    "description": "runtime parameter for tool gfastats",
-                    "name": "input_file"
-                },
-                {
-                    "description": "runtime parameter for tool gfastats",
-                    "name": "mode_condition"
-                }
-            ],
+            "inputs": [],
             "label": null,
             "name": "gfastats",
             "outputs": [
@@ -1163,7 +1154,7 @@
                 "owner": "bgruening",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"input_file\": {\"__class__\": \"RuntimeValue\"}, \"mode_condition\": {\"selector\": \"manipulation\", \"__current_case__\": 0, \"swiss_army_knife\": {\"__class__\": \"RuntimeValue\"}, \"output_condition\": {\"out_format\": \"gfa\", \"__current_case__\": 4, \"terminal_overlaps_condition\": {\"terminal_overlaps_select\": \"yes\", \"__current_case__\": 1, \"terminal_overlaps_length\": \"500\"}}, \"discover_paths\": false, \"sort\": \"\", \"homopolymer_compress\": null}, \"target_condition\": {\"target_option\": \"false\", \"__current_case__\": 0}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"input_file\": {\"__class__\": \"ConnectedValue\"}, \"mode_condition\": {\"selector\": \"manipulation\", \"__current_case__\": 0, \"swiss_army_knife\": {\"__class__\": \"ConnectedValue\"}, \"output_condition\": {\"out_format\": \"gfa\", \"__current_case__\": 4, \"terminal_overlaps_condition\": {\"terminal_overlaps_select\": \"yes\", \"__current_case__\": 1, \"terminal_overlaps_length\": \"500\"}}, \"discover_paths\": false, \"sort\": \"\", \"homopolymer_compress\": null}, \"target_condition\": {\"target_option\": \"false\", \"__current_case__\": 0}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "1.3.6+galaxy0",
             "type": "tool",
             "uuid": "55a89d15-73d3-4e8b-b9da-06e650bd00cf",
@@ -2362,16 +2353,7 @@
                     "output_name": "output"
                 }
             },
-            "inputs": [
-                {
-                    "description": "runtime parameter for tool gfastats",
-                    "name": "input_file"
-                },
-                {
-                    "description": "runtime parameter for tool gfastats",
-                    "name": "mode_condition"
-                }
-            ],
+            "inputs": [],
             "label": null,
             "name": "gfastats",
             "outputs": [
@@ -2381,8 +2363,8 @@
                 }
             ],
             "position": {
-                "left": 5039.509429931641,
-                "top": 1348.9124755859375
+                "left": 5040.299957275391,
+                "top": 1348.9125366210938
             },
             "post_job_actions": {
                 "TagDatasetActionoutput": {
@@ -2400,7 +2382,7 @@
                 "owner": "bgruening",
                 "tool_shed": "toolshed.g2.bx.psu.edu"
             },
-            "tool_state": "{\"input_file\": {\"__class__\": \"RuntimeValue\"}, \"mode_condition\": {\"selector\": \"manipulation\", \"__current_case__\": 0, \"swiss_army_knife\": {\"__class__\": \"RuntimeValue\"}, \"output_condition\": {\"out_format\": \"gfa\", \"__current_case__\": 4, \"terminal_overlaps_condition\": {\"terminal_overlaps_select\": \"yes\", \"__current_case__\": 1, \"terminal_overlaps_length\": \"500\"}}, \"discover_paths\": false, \"sort\": \"\", \"homopolymer_compress\": null}, \"target_condition\": {\"target_option\": \"false\", \"__current_case__\": 0}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"input_file\": {\"__class__\": \"ConnectedValue\"}, \"mode_condition\": {\"selector\": \"manipulation\", \"__current_case__\": 0, \"swiss_army_knife\": {\"__class__\": \"ConnectedValue\"}, \"output_condition\": {\"out_format\": \"gfa\", \"__current_case__\": 4, \"terminal_overlaps_condition\": {\"terminal_overlaps_select\": \"yes\", \"__current_case__\": 1, \"terminal_overlaps_length\": \"500\"}}, \"discover_paths\": false, \"sort\": \"\", \"homopolymer_compress\": null}, \"target_condition\": {\"target_option\": \"false\", \"__current_case__\": 0}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "1.3.6+galaxy0",
             "type": "tool",
             "uuid": "f15eb7b7-c881-490b-8734-cc4d934eaa3a",
@@ -3441,6 +3423,6 @@
     "tags": [
         "VGP_curated"
     ],
-    "uuid": "f37b87cb-969b-4464-b256-47d904ae8955",
-    "version": 3
+    "uuid": "80fccf94-4f19-400d-9921-f7d8db0cfbc5",
+    "version": 2
 }
