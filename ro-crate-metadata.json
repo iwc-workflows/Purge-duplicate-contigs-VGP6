@@ -4,7 +4,7 @@
         {
             "@id": "./",
             "@type": "Dataset",
-            "datePublished": "2024-04-29T15:54:18.200332",
+            "datePublished": "2024-08-15T15:51:32.414742",
             "hasPart": [
                 {
                     "@id": "Purge-duplicate-contigs-VGP6.ga"
@@ -39,7 +39,7 @@
             ],
             "creator": [
                 {
-                    "@id": "#1b749bd0-8cbf-4a84-b0bd-c8a24f45ad5f"
+                    "@id": "#ba614e66-f98b-4ce5-b449-a548bd368483"
                 },
                 {
                     "@id": "https://vertebrategenomeproject.org"
@@ -50,7 +50,7 @@
                 "@id": "#galaxy"
             },
             "url": "https://github.com/iwc-workflows/Purge-duplicate-contigs-VGP6",
-            "version": "0.3.8"
+            "version": "0.4"
         },
         {
             "@id": "#galaxy",
@@ -65,7 +65,7 @@
             "version": "v19_09"
         },
         {
-            "@id": "#1b749bd0-8cbf-4a84-b0bd-c8a24f45ad5f",
+            "@id": "#ba614e66-f98b-4ce5-b449-a548bd368483",
             "@type": "Organization",
             "name": "Galaxy"
         },
